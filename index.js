@@ -1,5 +1,5 @@
-let taskArray = [];
-let inputObject = new Object();
+//const taskArray = [];
+
 
 function submit(taskName, taskDescription, taskDate) {
     // As you can see i'm putting all the console.logs in the same object here
@@ -8,12 +8,18 @@ function submit(taskName, taskDescription, taskDate) {
     
     //console.log({ taskName, taskDescription, taskDate })
 
-    inputObject.ItemName = taskName;
-    inputObject.ItemDescription = taskDescription;
-    inputObject.ItemDate = taskDate;
+   let inputObject = new takeInput(taskName, taskDescription, taskDate);
 
-    //console.log(inputObject);
-    taskArray.push(inputObject);
+    console.log(inputObject);
+    //taskArray.push(inputObject);
 
-    console.log(taskArray);
+
+    //console.log(taskArray);
+}
+
+
+function takeInput(taskName, taskDescription, taskDate){
+    this.inputName = taskName;
+    this.inputDescription = taskDescription;
+    this.inputDate = taskDate;
 }
