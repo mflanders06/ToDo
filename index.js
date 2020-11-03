@@ -10,6 +10,8 @@ function submit(taskName, taskDescription, taskDate) {
 
    let inputObject = new takeInput(taskName, taskDescription, taskDate);
 
+
+
     console.log(inputObject);
     //taskArray.push(inputObject);
 
