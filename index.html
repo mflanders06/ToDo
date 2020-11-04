@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo App</title>
+    <script module src="index.js"></script>
+    <style>
+        .tableDiv {
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        table th {
+            border-bottom: 2px double black;
+            padding: 5px;
+            width: 100px;
+        }
+
+        table td {
+            border-bottom: 1px dotted lightgray;
+        }
+    </style>
 </head>
 <body>
     <label >Task Name:</label>
@@ -14,7 +34,19 @@
         <input type="date" id="taskDate" ><br>
     <button type="button" onclick="submit(taskName.value, taskDescription.value, taskDate.value)">Submit</button>
 
-
-    <script src="index.js"></script>
+    <div class='tableDiv'>
+        <h2>Using a FOR loop</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id='tableBodyFor'></tbody>
+        </table>
+    </div>
 </body>
 </html>
