@@ -30,7 +30,7 @@ function forLoopTable(){
     for(let i = 0; i < taskArray.length; i++){
         let tr = document.createElement('tr')
         
-        /*** The reason i use i + 1 in the first <td> element is because arrays
+        /*** The reason I am using i + 1 in the first <td> element is because arrays
          * are index 0 base and i want the ID to start at 1.
          */
 
